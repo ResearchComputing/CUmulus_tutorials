@@ -34,7 +34,20 @@ Tutorials and example workflows for CURC's on-prem cloud
 
 ## Persistant storage (necessary in this course?)
 
-## Python Twitter api
+## Twitter API
 - twitter dev accounts
-- set up and steam data to db
+the username of the person who wrote the tweet, the time it was created, the tweet, the retweet count, the place the tweet originated and the location (more on these below). This corresponds to 6 columns plus the primary key and we can define the datatypes as follows:
+
+    primary key: INT(11)
+    username: VARCHAR(255)
+    created_at: VARCHAR(45)
+    tweet: TEXT
+    retweet_count: INT(11)
+    location: VARCHAR(100)
+    place: VARCHAR(100)
+
+## Python
+- create a class that allows us to connect to the Twitter API.
+- create some code that connects to our database and reads the data into the correct columns.
+
 
