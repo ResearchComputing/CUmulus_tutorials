@@ -1,6 +1,9 @@
 # CUmulus_tutorials
 Tutorials and example workflows for CURC's on-prem cloud
 
+## CUmulus Allocation
+- touch on CUmlulus allocation process
+
 ## Login
 - CUmulus portal
 - Check we have prereqs for course (CUmlulus access, twitter dev account)
