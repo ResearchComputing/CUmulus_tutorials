@@ -38,13 +38,13 @@ Tutorials and example workflows for CURC's on-prem cloud
 - twitter dev accounts
 - the username of the person who wrote the tweet, the time it was created, the tweet, the retweet count, the place the tweet originated and the location (more on these below). This corresponds to 6 columns plus the primary key and we can define the datatypes as follows:
 
-    primary key: INT(11)
-    username: VARCHAR(255)
-    created_at: VARCHAR(45)
-    tweet: TEXT
-    retweet_count: INT(11)
-    location: VARCHAR(100)
-    place: VARCHAR(100)
+    - primary key: INT(11)
+    - username: VARCHAR(255)
+    - created_at: VARCHAR(45)
+    - tweet: TEXT
+    - retweet_count: INT(11)
+    - location: VARCHAR(100)
+    - place: VARCHAR(100)
 
 ## Python
 - create a class that allows us to connect to the Twitter API.
