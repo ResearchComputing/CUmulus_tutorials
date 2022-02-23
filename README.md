@@ -14,12 +14,20 @@ Tutorials and example workflows for CURC's on-prem cloud
 - Admin?
 
 ## Docker
+- brief discussion on containers
 
 ## Docker-Compose
+- brief discussion about docker-compose
 
-### Database (persistant data?)
+### Database
+- we'll use the mysql db container
 
 ### phpMyAdmin (Web based interface to manage db)
+- we'll use the phpMyAdmin web interfact to manage our db
 
-### Python Twitter api
+## Persistant storage (necessary in this course?)
+
+## Python Twitter api
+- twitter dev accounts
+- set up and steam data to db
 
