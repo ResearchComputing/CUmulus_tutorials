@@ -13,6 +13,9 @@ Tutorials and example workflows for CURC's on-prem cloud
 - Log into instance
 - Admin?
 
+## Create project
+- environment file
+
 ## Docker
 - brief discussion on containers
 - install docker (easy script)
