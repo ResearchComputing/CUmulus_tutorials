@@ -19,7 +19,7 @@ You can request specific resources (CPU, storage, memory) and can set up persist
 
 _Step 1:_ Users will submit a proposal for your use case (email rc-help@colorado.edu):
 * Describe your CUmulus workflow
-* Describe why your workflow is appropriate for CUmulus
+* Describe why your [workflow is appropriate for CUmulus](https://curc.readthedocs.io/en/latest/hybrid-cloud/cumulus.html#appropriate-use-cases)
 * Estimate the resources you require: operating system, CPU cores, disk space, memory
 
 _Step 2:_ The CURC allocation committee reviews your proposal and provide feedback.  This is an iterative process where we work with you to make sure the request for resources fits your (and our) needs. 
