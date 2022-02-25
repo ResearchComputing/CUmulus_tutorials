@@ -24,12 +24,12 @@ _Step 1:_ Users will submit a proposal for your use case (email rc-help@colorado
 
 _Step 2:_ The CURC allocation committee reviews your proposal and provide feedback.  This is an iterative process where we work with you to make sure the request for resources fits your (and our) needs. 
 
-_Step 3:_ After iteration, a decision on your proposal is made.  If awarded, you can proceed with [creating your instance](TBD) and start using CUmulus!
+_Step 3:_ After iteration, a decision on your proposal is made.  If awarded, you can proceed with [creating a CUmulus instance](./tutorial1/README.md) and start using CUmulus!
 
 ## Using CUmulus
 
 Using CUmulus is best explained via a series of tutorials that enable you to learn in a hands-on manner.  The first tutorial, "Creating a CUmulus Instance" is recommended for anyone using CUmulus.  Subsequent tutorials are optional and cover some common use cases and may be useful for informing your how to set up your specific workflow. 
 
-* [Tutorial 1: Creating a CUmulus Instance](TBD)
-* [Tutorial 2: Establish a MySQL database to query Twitter and store results](TBD)
+* [Tutorial 1: Creating a CUmulus instance](./tutorial1/README.md)
+* [Tutorial 2: Establish a MySQL database to query Twitter and store results](./tutorial2/README.md)
 
