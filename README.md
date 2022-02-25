@@ -30,6 +30,6 @@ _Step 3:_ After iteration, a decision on your proposal is made.  If awarded, you
 
 Using CUmulus is best explained via a series of tutorials that enable you to learn in a hands-on manner.  The first tutorial, "Creating a CUmulus Instance" is recommended for anyone using CUmulus.  Subsequent tutorials are optional and cover some common use cases and may be useful for informing your how to set up your specific workflow. 
 
-[Tutorial 1: Creating a CUmulus Instance](TBD)
-[Tutorial 2: Establish a MySQL database to query Twitter and store results](TBD)
+* [Tutorial 1: Creating a CUmulus Instance](TBD)
+* [Tutorial 2: Establish a MySQL database to query Twitter and store results](TBD)
 
