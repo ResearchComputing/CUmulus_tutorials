@@ -1,4 +1,4 @@
-# Clearing the Fog: An introduction to Cumulus
+# Clearing the Fog! Getting Started on Cumulus, a Near to the Ground On Campus Cloud Solution
 
 Cumulus is CU Research Computing's free-to-use on-premise cloud service, which supports cases not well-suited for HPC such as web servers, databases, and long-running services.
 
