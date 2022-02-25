@@ -1,14 +1,10 @@
-# Creating a CUmulus Instance
+# Creating a CUmulus instance
 
-Today we're going to go cover: 
-1) Cumulus Access 
-	- Getting access to Cumulus and the allocation process
-	- Logging into Horizon (Cumulus web portal)
-	- Creation of an instance (i.e. virtual machine) within a demo VPC
-	- Logging into your instance via ssh 
-2) Demo a workflow one might use Cumulus for: 
-	- Query Twitter via the Twitter API and store data into a MySQL database (using docker containers).
+___Learning Objectives:___
 
+* Logging into Horizon (the CUmulus web portal)
+* Creation of your instance (i.e. virtual machine) within a demo virtual private cloud (VPC)
+* Logging into your instance via ssh 
 
 ### CUmulus Instance Creation and Log In
 
