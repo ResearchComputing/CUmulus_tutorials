@@ -3,7 +3,7 @@
 
 ## What is CUmulus?
 
-Cumulus is [CU Research Computing](https://www.colorado.edu/rc)'s free-to-use on-premise cloud service, which supports cases not well-suited for HPC such as web servers, databases, and long-running services.
+[Cumulus](https://curc.readthedocs.io/en/latest/hybrid-cloud/cumulus.html) is [CU Research Computing](https://www.colorado.edu/rc)'s free-to-use on-premise cloud service, which supports cases not well-suited for HPC such as web servers, databases, and long-running services.
 
 Cumulus provides users with persistent or ongoing availability by allocating them a logically isolated section of the cloud
 
