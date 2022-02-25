@@ -1,42 +1,35 @@
-# Clearing the Fog! Getting Started on Cumulus, a Near to the Ground On Campus Cloud Solution
+# Clearing the Fog! Getting Started on CUmulus, a Near to the Ground On Campus Cloud Solution
 
-Cumulus is CU Research Computing's free-to-use on-premise cloud service, which supports cases not well-suited for HPC such as web servers, databases, and long-running services.
 
-The Cumulus service includes access to a Virtual Private Cloud (VPC) which provides users with a logically isolated section of the cloud with a small number of outside rout able floating IP addresses. Within this VPC customers will be given an allocation of:
+## What is CUmulus?
 
-- CPU cores
-- Memory
-- Storage
+Cumulus is [CU Research Computing](https://www.colorado.edu/rc)'s free-to-use on-premise cloud service, which supports cases not well-suited for HPC such as web servers, databases, and long-running services.
 
-## Today we're going to go cover: 
-1) Cumulus Access 
-	- Getting access to Cumulus and the allocation process
-	- Logging into Horizon (Cumulus web portal)
-	- Creation of an instance (i.e. virtual machine) within a demo VPC
-	- Logging into your instance via ssh 
-2) Demo a workflow one might use Cumulus for: 
-	- Query Twitter via the Twitter API and store data into a MySQL database (using docker containers).
+Cumulus provides users with persistent or ongoing availability by allocating them a logically isolated section of the cloud
 
-### Cumulus Access:
+You get your own virtual “world” for experimentation - an environment that can be easily created/deleted.
+* Install Software
+* Administer your instance (you’re in control!)
+* Run applications and jobs
+* Interface w/ other CURC services: Blanca, Alpine, PetaLibrary
 
-#### Cumulus Access and the Allocation Process
-The application process for Cumulus requires users to submit a proposal for your use case, which can be requested by emailing rc-help@colorado.edu. In this proposal you will:
+You can request specific resources (CPU, storage, memory) and can set up persistent storage.
 
-- Describe your Cumulus workflow
-- Describe why your workflow is appropriate for Cumulus (over other CURC HPC resources). 
-- Estimate the resources you require (operating system, CPU cores, disk space, memory)
+## How do I access CUmulus? 
 
-We will review your allocation and get back to you. This is an iterative process where we work with you to make sure the request for resources fits your (and our) needs. 
+_Step 1:_ Users will submit a proposal for your use case (email rc-help@colorado.edu):
+* Describe your CUmulus workflow
+* Describe why your workflow is appropriate for CUmulus
+* Estimate the resources you require: operating system, CPU cores, disk space, memory
 
-### CUmulus Instance Creation and Log In
+_Step 2:_ The CURC allocation committee reviews your proposal and provide feedback.  This is an iterative process where we work with you to make sure the request for resources fits your (and our) needs. 
 
-You can follow instance creation process and log in in the slides within this root directory as well as the CURC CUmulus documentation (https://curc.readthedocs.io/en/latest/hybrid-cloud/cumulus.html)
+_Step 3:_ After iteration, a decision on your proposal is made.  If awarded, you can proceed with [creating your instance](TBD) and start using CUmulus!
 
-### Demo Workflow(s):
+## Using CUmulus
 
-#### Twitter API
+Using CUmulus is best explained via a series of tutorials that enable you to learn in a hands-on manner.  The first tutorial, "Creating a CUmulus Instance" is recommended for anyone using CUmulus.  Subsequent tutorials are optional and cover some common use cases and may be useful for informing your how to set up your specific workflow. 
 
-The first demo we'll take a look at is using Cumulus to create an instance with a persistent database (MySQL) and a python application which will use the Twitter API and a Flask web server to query data from Twitter and store it in the database. The following is with docker containers to allow simple build-up/tear-down of the applications (a full discussion of Docker is out of the scope of this demo). This demo showcases a few important features of Cumulus:
-- A persistent workflow not limited by wall clock times (such as on HPC systems)
-- User administration of compute resources (using root privileges for applications such as Docker) 
-- Rout able floating IPs available on the internet.
+[Tutorial 1: Creating a CUmulus Instance](TBD)
+[Tutorial 2: Establish a MySQL database to query Twitter and store results](TBD)
+
