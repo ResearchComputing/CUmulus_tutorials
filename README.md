@@ -28,19 +28,9 @@ The application process for Cumulus requires users to submit a proposal for your
 
 We will review your allocation and get back to you. This is an iterative process where we work with you to make sure the request for resources fits your (and our) needs. 
 
-#### Login into Horizon 
-- Check we have priers for course (CUmlulus access).
+### CUmulus Instance Creation and Log In
 
-First we'll take a brief tour of Horizon, the Graphical Web Application that allows us to log into and administer our projects, first go to cumulus.rc.colorado.edu/.
-
-#### Instance Creation can be confusing, but all we're doing here is creating a virtual machine that we can then log into and administer ourselves. We're going to go through instance creation step-by-step.
-
-Let's step through creating our own instances.
-
-A note on ssh keys: #todo 
-
-#### Log into Instance 
-- Log into instance
+You can follow instance creation process and log in in the slides within this root directory as well as the CURC CUmulus documentation (https://curc.readthedocs.io/en/latest/hybrid-cloud/cumulus.html)
 
 ### Demo Workflow(s):
 
