@@ -17,6 +17,7 @@ We will use CUmulus to create an instance with a persistent database (MySQL) and
 - set up config file
   - twitter credientials
   - ports
+  - working directory
 
 ### Docker
 - install docker
