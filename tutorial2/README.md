@@ -6,3 +6,28 @@ We will use CUmulus to create an instance with a persistent database (MySQL) and
 * A persistent workflow not limited by wall clock times (such as on HPC systems)
 * User administration of compute resources (using root privileges for applications such as Docker) 
 * Routable floating IPs that enable you to access your instance via the Internet.
+
+## Step-by-Step
+
+### Setup
+- working CUmulus instance with http port exposed and public floating IP
+- twitter developer api credentials (link to tutorial)
+- pull git repo
+- go into tutorial 2 directory
+- set up config file
+  - twitter credientials
+  - ports
+
+### Docker
+- install docker
+  - test docker
+- install docker-compose
+  - test docker-compose
+- review docker compose file
+
+### Docker images
+- python twitter web app
+- mysql database
+
+### Persistant Data
+- docker volumes
