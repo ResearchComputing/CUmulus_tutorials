@@ -8,17 +8,13 @@ ___Learning Objectives:___
 * Creation of your instance (i.e. virtual machine) within a demo virtual private cloud (VPC)
 * Logging into your instance via ssh 
 
-### CUmulus Instance Creation and Log In
-
-
-
 ## Log in to Horizon 
 Horizon is the CUmulus web portal 
 cumulus.rc.colorado.edu/
 Let’s take a brief tour of Horizon
 Log in with your institution’s credentials:
 
-8
+![alt text](images/login.png"")
 
 Navigate Horizon 
 Choose your project (top left)
