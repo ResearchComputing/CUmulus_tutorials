@@ -12,7 +12,7 @@
 ###  Part 1: Logging in to CUmulus via Horizon
 ---
 
-_Horizon is the CUmulus web portal, hosted at https://cumulus.rc.colorado.edu. Let’s take a brief tour of Horizon_
+_Horizon is the CUmulus web portal, hosted at https://cumulus.rc.colorado.edu. Let’s take a brief tour of Horizon_.
 
 #### _Log in with your institution’s credentials:_
 
@@ -27,7 +27,7 @@ Navigate to https://cumulus.rc.colorado.edu and authenticate using your insituti
 #### _Navigate Horizon_
 
 * Choose your project (top left)
-  * Generally users only have 1 project
+  * _Note: Generally users only have 1 project_
 
 * There are 4 main sections
   * `Compute`
@@ -66,7 +66,7 @@ Navigate to https://cumulus.rc.colorado.edu and authenticate using your insituti
 ---
 
 * From here, let’s create a simple instance
-  * From the Instances page click “_Launch Instance_” to begin creating your virtual machine.
+  * From the Instances page click `Launch Instance` to begin creating your virtual machine.
 
 #### _Instance creation: Details_
  
@@ -78,86 +78,139 @@ The first instance creation screen is entiled ___Details___:
 
 * Fill out the instance _name_ and _description_
   * _availability zone_ and _count_ can be left as defaults
-  * click `Next` when done to go to the ___Source___ screen.
+* click `Next` when done to go to the ___Source___ screen.
  
 ---
 
 #### _Instance creation: Source_
 
-You can choose an operating system from the images CURC provides
+<p align="center">
+<img src="images/instance_source.png" width="70%" />
+</p>
 
-Choose to have your storage volume deleted on Instance Deletion
-If you select fno” be aware of “zombie” volumes that will stay around when the instance is deleted
-15
+* Choose an operating system from the list of images CURC provides
+* Choose a storage volume size 
+  * _For this tutorial, choose 2 GB_
+* Choose to have your storage volume deleted on Instance Deletion
+  * If you select _No_ “zombie” volumes will remain when the instance is deleted
+* click `Next` when done to go to the ___Flavor___ screen.
 
-Flavor
-Choose from a list of pre-selected resources:
+---
+
+#### _Instance creation: Flavor_
+
+<p align="center">
+<img src="images/instance_flavor.png" width="70%" />
+</p>
+
 “Flavors” manage the sizing for the compute, memory, and storage of the instance.
-16
+* Choose the most appropriate sizing for your use case from a list of pre-selected resources
+  * _For this tutorial, select the smallest size_
+* click `Next` when done to go to the ___Networks___ screen.
 
-Networks & Network Ports
-Select a project network, which determines routability of either a public/internet or campus/internal floating IP.
-We’ll choose an external network
+---
 
-Ports provide extra communication channels to your instances. 
+#### _Instance creation: Networks & Network Ports_
 
-You can select ports instead of networks or a mix of both.
-17
+<p align="center">
+<img src="images/instance_networks.png" width="70%" />
+</p>
 
-Security Groups
-Security Groups act as a virtual firewall for your instance to control inbound and outbound traffic.
+* Select a project network, which determines routability of either a public/internet or campus/internal floating IP.
+  * _For this tutorial we’ll choose an external network (the default)_
+* click `Next` when done to go to the ___Ports___ screen.
+  * Ports provide extra communication channels to your instances. 
+  * You can select ports instead of networks or a mix of both.
+* click `Next` when done to go to the ___Security Groups___ screen.
 
-We’ll pick ssh-restricted, http, and https for our demo
-18
+---
 
-Key Pair
-A key pair allows you to SSH into your new instance.
+#### _Instance creation: Security Groups_
 
-You may select an existing key pair, import a key pair, or generate a new key pair.
+<p align="center">
+<img src="images/instance_security_groups.png" width="70%" />
+</p>
 
-I find it easiest to create a keypair on my local machine and import it
-https://www.ssh.com/academy/ssh/public-key-authentication 
-19
+* Security Groups act as a virtual firewall for your instance to control inbound and outbound traffic.
+  * Choose `ssh-restricted`, `http`, and `https` for this tutorial
+* click `Next` when done to go to the ___Key Pair___ screen.
 
-Config, Server Group, Scheduler Hints, and Metadata
-We’ll leave these as defaults as they are extra configuration we can provide our instances, but not necessary 
-20
+---
 
-Launch Instance and Associate IP
-Launch instance and wait for it to be set up
+#### _Instance creation: Key Pair_
 
-We can then associate a Floating IP which will allow us to access the instance from outside of the CU network
-On the right hand side of the newly created instance choose “Associate Floating IP” under the “actions” dropdown
-21
+<p align="center">
+<img src="images/instance_keypair.png" width="70%" />
+</p>
 
-Associate IP
-Select from available IP addresses
-If needed you can add a floating IP, but be aware there are limited numbers of floating IPs
+* A key pair allows you to SSH into your new instance.
+* You may select an existing key pair, import a key pair, or generate a new key pair.
+  * _Tip: it is often easiest to create a keypair in a terminal on your local machine and import it: https://www.ssh.com/academy/ssh/public-key-authentication_ 
+* click `Next` when done to go to the ___Configuration___ screen.
 
-Select port to be associated
-This should be pre-populated with the internal IP of your new instance
-22
+---
 
-Logging into your Instance
-23
+#### _Instance creation: Configuration, Server Group, Scheduler Hints, and Metadata_
 
-Logging In
-You must be on CU VPN to connect via ssh (CURC restriction)
+<p align="center">
+<img src="images/instance_config.png" width="70%" />
+</p>
 
-Open up an ssh connection providing the identity (key) file:
+* For the remaining screens -- _Configuration_, _Server Group_, _Scheduler Hings_, and _Metadata_ -- leave these as defaults, as they are extra, optional configuration for the instances.
+
+---
+
+#### _Instance creation: Launch Instance and Associate IP_
+
+* ___Finally___ you can click `Launch instance`! 
+  * the instance will take a few minutes to finish provisioning.
+
+* You can now associate a Floating IP to enable access to the instance from outside of the CU network.
+  * On the right hand side of the newly created instance choose `Associate Floating IP` under the `Actions` dropdown
+  
+<p align="center">
+<img src="images/instance_ip1.png" width="40%" />
+</p>
+
+
+* Now select from available IP addresses if needed (e.g., if you'll be adding a web portal to your instance)
+* The _Select port to be associated_ option should already be pre-populated with the internal IP of your new instance
+
+<p align="center">
+<img src="images/instance_ip2.png" width="70%" />
+</p>
+
+---
+### Part 3: Logging into your Instance
+---
+
+At a minimum, you'll need to login to your instance via `ssh` to install the software you'll be using. Other reasons to login to the instance may be to stop or start services, associate a domain name with your IP, run your software, troubleshoot problems, etc. You are essentially the "system administrator" of your own instance.
+
+* To login to an instance via `ssh`, you _must_ be on CU VPN to connect (this is CURC restriction)
+* Open up an ssh connection providing the identity (key) file that you associated with the instance in the _Key Pair_ step covered earlier:
+
+```bash
 $ ssh -i ~/.ssh/<private key> <hostname>@<external floating IP>
+```
 
-For an ubuntu instance this may look something like:
+* Note that `hostname` will be "ubuntu" for Ubuntu instances, "centos" for Centos instances, etc. 
+  * For example, for an ubuntu instance your `ssh` command may look something like this:
+
+```bash
 $ ssh -i ~/.ssh/testkey ubuntu@123.456.789.123
-24
+```
 
-Logged In
-Congratulations! You are now logged into your instance
+__Congratulations! You are now logged into your instance!__ 
 
-You can now:
-Install Software
-Administer your instance
-Run applications and jobs
+* You can now:
+  * Install Software
+  * Administer your instance
+  * Run applications and jobs
+* If you need to perform actions as the _root_ (administrative) user, once logged in you can "sudo" to the _root_ account as follows:
+
+```bash
+$ sudo su - root
+```
   
 ## Additional Information
   * [CUmulus documentation](https://curc.readthedocs.io/en/latest/hybrid-cloud/cumulus.html)
