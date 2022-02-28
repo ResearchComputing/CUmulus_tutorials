@@ -1,7 +1,5 @@
 # Creating a CUmulus instance
 
-
-
 ___Learning Objectives:___
 
 * Logging into Horizon (the CUmulus web portal)
@@ -9,39 +7,51 @@ ___Learning Objectives:___
 * Logging into your instance via ssh 
 
 ## Log in to Horizon 
-Horizon is the CUmulus web portal 
-cumulus.rc.colorado.edu/
-Let’s take a brief tour of Horizon
-Log in with your institution’s credentials:
 
-![alt text](images/login.png"")
+Horizon is the CUmulus web portal, hosted at https://cumulus.rc.colorado.edu. Let’s take a brief tour of Horizon
 
-Navigate Horizon 
-Choose your project (top left)
-Generally users only have 1 project
+### Log in with your institution’s credentials:
 
-4 main sections
-Compute
-Volumes
-Networks
-Orchestration
-9
+Navigate to https://cumulus.rc.colorado.edu and authenticate using your insitution's credentials (e.g., University of Colorado Boulder)
 
-Navigate Horizon: Overview 
-Land on the Overview page under “Compute”
-quick summary of your project
-10
+<p align="center">
+<img src="images/login.png" width="50%" align="center" />
+</p>
 
-Navigate Horizon: Instances 
-Navigate to:
- Project->Compute->Instances
+### Navigate Horizon 
 
-An Instance is just a digital version of a physical computer.
-Instances can perform almost all of the same functions as a computer, including running applications and operating systems.
-11
+* Choose your project (top left)
+ * Generally users only have 1 project
 
-Instance Creation
-12
+* There are 4 main sections
+ * `Compute`
+ * `Volumes`
+ * `Networks`
+ * `Orchestration`
+ * 
+<p align="center">
+<img src="images/navigate_intro.png" width="40%" align="center" />
+</p>
+
+### Navigate Horizon: Overview 
+
+* Land on the Overview page under “Compute” to get a quick summary of your project
+
+<p align="center">
+<img src="images/navigate_overview.png" width="50%" align="center" />
+</p>
+
+### Navigate Horizon: Instances 
+
+* Navigate to:
+ * `Project->Compute->Instances`
+
+* An Instance is just a digital version of a physical computer.
+ * Instances can perform almost all of the same functions as a computer, including running applications and operating systems.
+
+* You are now ready for instance creation! ...
+
+## Instance Creation
 
 Let’s create a simple instance together
 From the instances page click on “Launch Instance”
