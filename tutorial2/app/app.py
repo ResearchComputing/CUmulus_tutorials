@@ -1,30 +1,62 @@
 import mysql.connector
 import json
-from flask import Flask, render_template
-
-def page_not_found(e):
-    return render_template('404.html')
+import search
+import database
+import os
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
-app.register_error_handler(404, page_not_found)
 
-@app.route('/')
-def hello_world():
-  # return 'Hello, Docker!'
-  return render_template('index.html')
+database.db_init()
 
-@app.route('/widgets')
-def get_widgets():
+def add_tweets(tweets):
   mydb = mysql.connector.connect(
     host="mysqldb",
     user="root",
-    password="p@ssw0rd1",
-    database="inventory"
+    password=os.environ['MYSQL_ROOT_PASSWORD'],
+    database="socialmedia"
+  )
+  cursor = mydb.cursor()
+  
+  for tweet in tweets:
+      add_tweet = ("INSERT INTO tweets "
+                   "(username, tweet)"
+                   "VALUES (%s, %s)")
+
+      data_tweet = (tweet["username"], tweet["text"])
+
+      cursor.execute(add_tweet, data_tweet)
+      mydb.commit()
+
+  cursor.close()
+
+
+@app.route('/', methods=["GET", "POST"])
+def index():
+
+    query = 'Project Management lang:en -is:retweet'
+
+    if request.method == 'POST':
+        query = '{} lang:en -is:retweet'.format(request.form['query'])
+
+    max_results = 10 
+    tweets = search.returnSearchTweetList(query, max_results)
+    add_tweets(tweets)
+
+    return render_template('index.html', **locals())
+
+@app.route('/tweets')
+def get_tweets():
+  mydb = mysql.connector.connect(
+    host="mysqldb",
+    user="root",
+    password=os.environ['MYSQL_ROOT_PASSWORD'],
+    database="socialmedia"
   )
   cursor = mydb.cursor()
 
 
-  cursor.execute("SELECT * FROM widgets")
+  cursor.execute("SELECT * FROM tweets")
 
   row_headers=[x[0] for x in cursor.description] #this will extract row headers
 
@@ -37,32 +69,7 @@ def get_widgets():
 
   return json.dumps(json_data)
 
-@app.route('/initdb')
-def db_init():
-  mydb = mysql.connector.connect(
-    host="mysqldb",
-    user="root",
-    password="p@ssw0rd1"
-  )
-  cursor = mydb.cursor()
-
-  cursor.execute("DROP DATABASE IF EXISTS inventory")
-  cursor.execute("CREATE DATABASE inventory")
-  cursor.close()
-
-  mydb = mysql.connector.connect(
-    host="mysqldb",
-    user="root",
-    password="p@ssw0rd1",
-    database="inventory"
-  )
-  cursor = mydb.cursor()
-
-  cursor.execute("DROP TABLE IF EXISTS widgets")
-  cursor.execute("CREATE TABLE widgets (name VARCHAR(255), description VARCHAR(255))")
-  cursor.close()
-
-  return 'init database'
 
 if __name__ == "__main__":
   app.run(host ='0.0.0.0')
+

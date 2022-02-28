@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Skolo</title>
+    <title>Twitter Example</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.png') }}">
 
     <!-- Bootstrap CSS -->
@@ -48,9 +48,9 @@
                  <div class="col-lg-6">
                    <a href="{{tweet.url}}"><button class="btn btn-primary btn-block">VIEW TWEET</button></a>
                  </div>
-                 <div class="col-lg-6">
-                   <a href="/retweet/{{tweet.id}}/"><button class="btn btn-success btn-block">RETWEET</button></a>
-                 </div>
+                 <!-- <div class="col-lg-6"> -->
+                 <!--   <a href="/retweet/{{tweet.id}}/"><button class="btn btn-success btn-block">RETWEET</button></a> -->
+                 <!-- </div> -->
                </div>
               </div>
             </div>
@@ -77,3 +77,4 @@
 
   </body>
 </html>
+
