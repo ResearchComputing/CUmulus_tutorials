@@ -4,9 +4,9 @@
 
 #### _Learning Objectives:_
 
-* Logging into CUmulus via Horizon (the CUmulus web portal)
-* Creating your instance (i.e. virtual machine)
-* Logging into your instance via `ssh` 
+* [Logging into CUmulus via Horizon](#part-1-logging-in-to-cumulus-via-horizon) (the CUmulus web portal)
+* [Creating your instance](#part-2-instance-creation) (i.e. virtual machine)
+* [Logging into your instance](#part-3-logging-into-your-instance) via `ssh` 
 
 ---
 ###  Part 1: Logging in to CUmulus via Horizon
