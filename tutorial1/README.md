@@ -211,6 +211,9 @@ __Congratulations! You are now logged into your instance!__
 ```bash
 $ sudo su - root
 ```
-  
-## Additional Information
+
+---  
+### Additional Information
+---
+
   * [CUmulus documentation](https://curc.readthedocs.io/en/latest/hybrid-cloud/cumulus.html)
