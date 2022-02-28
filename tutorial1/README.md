@@ -1,70 +1,89 @@
 # Creating a CUmulus instance
 
-___Learning Objectives:___
+---
 
-* Logging into Horizon (the CUmulus web portal)
-* Creation of your instance (i.e. virtual machine) within a demo virtual private cloud (VPC)
-* Logging into your instance via ssh 
+#### _Learning Objectives:_
 
-## Log in to Horizon 
+* Logging into CUmulus via Horizon (the CUmulus web portal)
+* Creating your instance (i.e. virtual machine)
+* Logging into your instance via `ssh` 
 
-Horizon is the CUmulus web portal, hosted at https://cumulus.rc.colorado.edu. Let’s take a brief tour of Horizon
+---
+###  Part 1: Logging in to CUmulus via Horizon
+---
 
-### Log in with your institution’s credentials:
+_Horizon is the CUmulus web portal, hosted at https://cumulus.rc.colorado.edu. Let’s take a brief tour of Horizon_
+
+#### _Log in with your institution’s credentials:_
 
 Navigate to https://cumulus.rc.colorado.edu and authenticate using your insitution's credentials (e.g., University of Colorado Boulder)
 
 <p align="center">
-<img src="images/login.png" width="50%" align="center" />
+<img src="images/login.png" width="40%" />
 </p>
 
-### Navigate Horizon 
+---
+
+#### _Navigate Horizon_
 
 * Choose your project (top left)
- * Generally users only have 1 project
+  * Generally users only have 1 project
 
 * There are 4 main sections
- * `Compute`
- * `Volumes`
- * `Networks`
- * `Orchestration`
- * 
-<p align="center">
-<img src="images/navigate_intro.png" width="40%" align="center" />
+  * `Compute`
+  * `Volumes`
+  * `Networks`
+  * `Orchestration`
+ 
+<p align="left">
+<img src="images/navigate_intro.png" width="35%" />
 </p>
 
-### Navigate Horizon: Overview 
+---
+
+#### _Navigate Horizon: Overview_
 
 * Land on the Overview page under “Compute” to get a quick summary of your project
 
 <p align="center">
-<img src="images/navigate_overview.png" width="50%" align="center" />
+<img src="images/navigate_overview.png" width="70%" />
 </p>
 
-### Navigate Horizon: Instances 
+---
 
-* Navigate to:
- * `Project->Compute->Instances`
+#### _Navigate Horizon: Instances_
+
+* Navigate to: `Project->Compute->Instances`
 
 * An Instance is just a digital version of a physical computer.
- * Instances can perform almost all of the same functions as a computer, including running applications and operating systems.
+  * Instances can perform almost all of the same functions as a computer, including running applications and operating systems.
 
 * You are now ready for instance creation! ...
 
-## Instance Creation
 
-Let’s create a simple instance together
-From the instances page click on “Launch Instance”
+---
+### Part 2: Instance Creation
+---
+
+* From here, let’s create a simple instance
+  * From the Instances page click “_Launch Instance_” to begin creating your virtual machine.
+
+#### _Instance creation: Details_
  
-The Instance Creation Launcher will pop up giving us options to create our virtual machine:
-13
+The first instance creation screen is entiled ___Details___: 
 
-Details
-Fill out Instance details, including a name and description
-availability zone and count can be left as defaults
-14
+<p align="center">
+<img src="images/instance_details.png" width="70%" />
+</p>
 
-Source
+* Fill out the instance _name_ and _description_
+  * _availability zone_ and _count_ can be left as defaults
+  * click `Next` when done to go to the ___Source___ screen.
+ 
+---
+
+#### _Instance creation: Source_
+
 You can choose an operating system from the images CURC provides
 
 Choose to have your storage volume deleted on Instance Deletion
