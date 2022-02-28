@@ -1,4 +1,4 @@
-# Creating a CUmulus instance
+# Tutorial: Creating a CUmulus instance
 
 ---
 
