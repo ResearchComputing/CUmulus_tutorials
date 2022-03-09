@@ -33,4 +33,5 @@ Using CUmulus is best explained via a series of tutorials that enable you to lea
 * [Tutorial 1: Creating a CUmulus instance](./tutorial1/README.md)
 * [Tutorial 2: Establish a MySQL database to query Twitter and store results](./tutorial2/README.md)
 * [Tutorial 3: Integrating CUmulus with CURC HPC Resources](./tutorial3/README.md)
+* [Tutorial 4: Mounting filesystems on CURC HPC Resources from CUmulus](./tutorial4/README.md)
 
