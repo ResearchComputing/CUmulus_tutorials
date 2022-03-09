@@ -77,7 +77,7 @@ The first instance creation screen is entiled ___Details___:
 </p>
 
 * Fill out the instance _name_ and _description_
-  * _availability zone_ and _count_ can be left as defaults
+  * _availability zone_ and _count_ can be left as default. This value is set to the availability zone given by the cloud provider (for example, us-west or apac-south).
 * click `Next` when done to go to the ___Source___ screen.
  
 ---
