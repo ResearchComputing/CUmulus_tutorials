@@ -158,7 +158,7 @@ A flavor defines the compute, memory, and storage capacity of our instance.
 <img src="images/instance_config.png" width="70%" />
 </p>
 
-* For the remaining screens -- _Configuration_, _Server Group_, _Scheduler Hings_, and _Metadata_ -- leave these as defaults, as they are extra, optional configuration for the instances.
+* For the remaining screens -- _Configuration_, _Server Group_, _Scheduler Hints_, and _Metadata_ -- leave these as defaults, as they are extra, optional configuration for the instances.
 
 ---
 
