@@ -29,7 +29,7 @@ Navigate to https://cumulus.rc.colorado.edu and authenticate using your insituti
 * Choose your project (top left)
   * _Note: Generally users only have 1 project_
 
-* There are 4 main sections
+* There are 4 main sections we use to administer projects:
   * `Compute`
   * `Volumes`
   * `Networks`
