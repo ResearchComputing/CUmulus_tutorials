@@ -48,7 +48,7 @@ We need a working CUmulus instance running Ubuntu with http port exposed (defaul
 ####  Part 3: Getting the Source Code
 ---
 
-You will need to clone this github repo (which you have likely already done if following [tutorial1](https://github.com/ResearchComputing/CUmulus_tutorials/tree/twitterapi-dev/tutorial1)). The code for this application lives in this git repo, which you can download with `git clone` into your instance using:
+You will need to clone this github repo (which you may have already done if following [tutorial1](https://github.com/ResearchComputing/CUmulus_tutorials/tree/twitterapi-dev/tutorial1)). The code for this application lives in this git repo, which you can download with `git clone` into your instance using:
 ```
 $ git clone https://github.com/ResearchComputing/CUmulus_tutorials.git
 ```
