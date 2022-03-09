@@ -31,7 +31,7 @@ We need a working CUmulus instance running Ubuntu with http port exposed (defaul
 	- Log into your instance via ssh (see  [tutorial 1](https://github.com/ResearchComputing/CUmulus_tutorials/tree/twitterapi-dev/tutorial1)); *ensure you are on the CU VPN*.
 	- Updating and upgrading you instance at this point is a good idea, you can do so with the following command:
 		 ```
-		 `$ sudo apt-get update && sudo apt-get upgrade -y`
+		 $ sudo apt-get update && sudo apt-get upgrade -y
 		``` 
 
 ---
