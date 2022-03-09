@@ -83,21 +83,24 @@ The first instance creation screen is entiled ___Details___:
 ---
 
 #### _Instance creation: Source_
+Next, we'll select our boot source. We're starting a new instance from scratch here so we'll boot from a source OS image.
 
 <p align="center">
 <img src="images/instance_source.png" width="70%" />
 </p>
 
-* Choose an operating system from the list of images CURC provides
+* Choose an operating system from the list of images CURC provides (in this example we pick Ubuntu 18.04)
 * Choose a storage volume size 
-  * _For this tutorial, choose 2 GB_
+  * _For this tutorial, choose 4 GB_
+  * _Choosing an image will auto-populate the size, warning you if it is too small_
 * Choose to have your storage volume deleted on Instance Deletion
-  * If you select _No_ “zombie” volumes will remain when the instance is deleted
+  * If you select _No_ be aware “zombie” volumes will remain when the instance is deleted (you will need to remove them manually later!)
 * click `Next` when done to go to the ___Flavor___ screen.
 
 ---
 
 #### _Instance creation: Flavor_
+A flavor defines the compute, memory, and storage capacity of our instance.
 
 <p align="center">
 <img src="images/instance_flavor.png" width="70%" />
