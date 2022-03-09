@@ -213,9 +213,11 @@ __Congratulations! You are now logged into your instance!__
 ```bash
 $ sudo su - root
 ```
+  or run a command with the `sudo` prefix.
 
 ---  
 ### Additional Information
 ---
 
   * [CUmulus documentation](https://curc.readthedocs.io/en/latest/hybrid-cloud/cumulus.html)
+  * [OpenStack User Documentation](https://docs.openstack.org/horizon/latest/user/index.html)
