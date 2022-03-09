@@ -106,7 +106,6 @@ A flavor defines the compute, memory, and storage capacity of our instance.
 <img src="images/instance_flavor.png" width="70%" />
 </p>
 
-“Flavors” manage the sizing for the compute, memory, and storage of the instance.
 * Choose the most appropriate sizing for your use case from a list of pre-selected resources
   * _For this tutorial, select the smallest size_
 * click `Next` when done to go to the ___Networks___ screen.
