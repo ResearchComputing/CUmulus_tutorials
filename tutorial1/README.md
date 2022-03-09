@@ -150,7 +150,7 @@ A flavor defines the compute, memory, and storage capacity of our instance.
   * _Tip: it is often easiest to create a keypair in a terminal on your local machine and import it: https://www.ssh.com/academy/ssh/public-key-authentication_ 
 * click `Next` when done to go to the ___Configuration___ screen.
 
-> An aside on SSH keypairs: SSH keys are an access credential that is used in the SSH protocol and they are foundational to modern Infrastructure-as-a-Service platforms. Public key authentication provides cryptographic strength that even extremely long passwords can not offer. With [SSH](https://www.ssh.com/ssh/), public key authentication improves security considerably as it frees the users from remembering complicated passwords (or worse yet, writing them down).
+> _**An aside on SSH keypairs:**_ SSH keys are an access credential that is used in the SSH protocol and they are foundational to modern Infrastructure-as-a-Service platforms. Public key authentication provides cryptographic strength that even extremely long passwords can not offer. With [SSH](https://www.ssh.com/ssh/), public key authentication improves security considerably as it frees the users from remembering complicated passwords (or worse yet, writing them down).
 >
 > They can be tricky to set up for new users however, so we'll go over a simple example here. From your terminal in a local machine use the `ssh-keygen` command to create a new ssh keypair (you can specify cryptographic algorithm, in this case we'll use the Ed25519 algorithm):
 >  ```shell
