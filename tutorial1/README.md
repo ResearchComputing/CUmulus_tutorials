@@ -55,7 +55,7 @@ Navigate to https://cumulus.rc.colorado.edu and authenticate using your insituti
 
 * Navigate to: `Project->Compute->Instances`
 
-* An Instance is just a digital version of a physical computer.
+* Instances are virtual machines that run inside the cloud, more simply: an Instance is just a digital version of a physical computer.
   * Instances can perform almost all of the same functions as a computer, including running applications and operating systems.
 
 * You are now ready for instance creation! ...
