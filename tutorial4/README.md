@@ -2,13 +2,14 @@
 
 
 ___Learning Objectives:___
-* Install the software needed to remotely mount a CURC PetaLibrary allocation
-* Establish the remote mount to PetaLibrary
-* Test that you can view files and copy files to/from PetaLibrary
+* [Install the software needed to remotely mount a CURC PetaLibrary allocation](https://github.com/ResearchComputing/CUmulus_tutorials/edit/main/tutorial4/README.md#part-1-install-sshfs)
+* [Establish the remote mount to PetaLibrary](https://github.com/ResearchComputing/CUmulus_tutorials/edit/main/tutorial4/README.md#part-2-mount-petalibrary-with-sshfs)
+* [Test that you can view files and copy files to/from PetaLibrary](https://github.com/ResearchComputing/CUmulus_tutorials/edit/main/tutorial4/README.md#part-3-test-your-mount)
+* [Remove the remote mount](https://github.com/ResearchComputing/CUmulus_tutorials/edit/main/tutorial4/README.md#part-4-remove-your-mount)
 
 ## Introduction
 
-An important capability of virtual machines (VMs) on CUmulus is that remote filesystems on CURC can be mounted as filesystems on VMs.  This enables access to large datasets that may not otherwise be practical to place on the CUmulus VM, where storage is more limited. This tutorial demonstrates this capability. As a prerequisite, it is assumed you have already "spun-up" a CUmulus VM, as covered in [Tutorial 1](../tutorial1/README.md).
+Remote filesystems on CURC can be mounted as filesystems on CUmulus VMs.  This enables access to large datasets that may not otherwise be practical to place on the CUmulus VM, where storage is more limited. This tutorial demonstrates this capability. As a prerequisite, it is assumed you have already "spun-up" a CUmulus VM, as covered in [Tutorial 1](../tutorial1/README.md).
 
 ## Tutorial
 
@@ -45,16 +46,16 @@ Create a folder on the VM where you would like to mount your PetaLibrary allocat
 mkdir ~/mypetalibrary
 ```
 
-Now you can mount your PetaLibrary allocation to this directory as generically as follows: 
+Now mount your PetaLibrary allocation to the directory.  The generic syntax is:
 
 ```bash
 sshfs <your-rc-username>@dtn.rc.int.colorado.edu:/pl/active/<your-pl-directory> <local-directory>
 ```
 
-For example: 
+For example if your CURC username is `ralphie` and you want to mount your PetaLibrary allocation called `rcops` to `~/mypetalibrary`: 
 
 ```bash
-sudo sshfs ralphie@dtn.rc.int.colorado.edu:/pl/active/rcops ~mypetalibrary
+sshfs ralphie@dtn.rc.int.colorado.edu:/pl/active/rcops ~mypetalibrary
 ```
 
 You will be prompted for your password after execution. Type your password and accept the duo prompt.
@@ -67,7 +68,7 @@ Your selected directory will now be mounted to your Petalibrary allocation.
 Can you _see_ the files in your PetaLibrary allocation? 
 
 ```bash
-ls -l ~/mypetalibrary/
+ubuntu@198.59.83.67:$ ls -l ~/mypetalibrary/
 drwxr-sr-x 1  411465 1000000        2 Jun  8  2021  gtest
 drwxr-sr-x 1  416810 1000000        8 Feb 20  2020  ior-testing
 -rw-r--r-- 1 root    root     4194304 Oct  8  2020  testfile
@@ -77,8 +78,9 @@ drwxr-sr-x 1  416810 1000000        8 Feb 20  2020  ior-testing
 
 Can you copy a file _from_ the PetaLibrary allocation? 
 
-```cp ~/mypetalibrary/testfile .
-ls -l .
+```bash
+ubuntu@198.59.83.67:$ cp ~/mypetalibrary/testfile .
+ubuntu@198.59.83.67:$ ls -l .
 total 4100
 drwxrws--x 1 1000000 1000000      70 Mar  2 16:07 mypetalibrary
 -rw-r--r-- 1 ubuntu  ubuntu  4194304 Mar 11 19:13 testfile
@@ -87,9 +89,9 @@ drwxrws--x 1 1000000 1000000      70 Mar  2 16:07 mypetalibrary
 ...yes! Can you create a new file and copy it _to_ the PetaLibrary allocation?
 
 ```bash
-ubuntu@slurm-nso:~$ touch newtestfile
-ubuntu@slurm-nso:~$ cp newtestfile ~/mypetalibrary/
-ubuntu@slurm-nso:~$ ls -l ~/mypetalibrary/newtestfile
+ubuntu@198.59.83.67:$ touch newtestfile
+ubuntu@198.59.83.67:$ cp newtestfile ~/mypetalibrary/
+ubuntu@198.59.83.67:$ ls -l ~/mypetalibrary/newtestfile
 -rw-r--r-- 1 122971 1000000 0 Mar 11 19:14 /home/ubuntu/mypetalibrary/newtestfile
 ```
 
