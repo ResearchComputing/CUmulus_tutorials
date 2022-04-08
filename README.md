@@ -1,5 +1,3 @@
-# CUmulus
-
 # Clearing the Fog! Getting Started on CUmulus, a Near to the Ground On Campus Cloud Solution
 
 
