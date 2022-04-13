@@ -15,7 +15,7 @@ We have documented the process for an **Ubuntu 20.04 instance on CUmulus connect
 ### Instructions for Ubuntu 20.04:
 
 ---
-####  Part 1: Create your CUmlus instance
+####  Part 1 Create your CUmlus instance
 ---
 The first thing we will need to do is create a Ubuntu 20.04 CUmulus instance. Log in to the [CUmlus portal](https://cumulus.rc.colorado.edu) and follow our [tutorial1](https://github.com/ResearchComputing/CUmulus_tutorials/tree/main/tutorial1) to create a CUmulus instance with the following specifications: 
 * Image: Ubuntu 20.04 
@@ -130,6 +130,7 @@ Our CUmulus instance is now configured to submit jobs to CURC HPC resources. Whe
 
 You have now successfully connected your CUmulus instance to CURC HPC resources! From this point you have a number of ways to integrate this connection into your workflow:
 * Pass raw data to CURC HPC resources for post-processing once it becomes available.
-* example 2
-* example 3
 
+
+		
+> This work has been funded in part by the National Science Foundation under grant OAC-1925766

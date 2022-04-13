@@ -35,3 +35,4 @@ Using CUmulus is best explained via a series of tutorials that enable you to lea
 * [Tutorial 3: Integrating CUmulus with CURC HPC Resources](./tutorial3/README.md)
 * [Tutorial 4: Mounting filesystems on CURC HPC Resources from CUmulus](./tutorial4/README.md)
 
+> This work has been funded in part by the National Science Foundation under grant OAC-1925766

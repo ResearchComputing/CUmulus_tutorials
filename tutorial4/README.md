@@ -112,3 +112,6 @@ sshfs umount ~/mypetalibrary
   * [CUmulus documentation](https://curc.readthedocs.io/en/latest/hybrid-cloud/cumulus.html)
   * [OpenStack User Documentation](https://docs.openstack.org/horizon/latest/user/index.html)
   * [PetaLibrary Documentation](https://curc.readthedocs.io/en/latest/storage/petalibrary/index.html)
+
+
+> This work has been funded in part by the National Science Foundation under grant OAC-1925766
