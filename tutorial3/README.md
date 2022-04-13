@@ -6,7 +6,7 @@
 One potentially useful application of CUmulus is the ability to integrate your VMs with CU Research Computing High Performance Computing (HPC) resources. HPC compute is typically time-limited (at CURC 24 hours for regular joband 7 days long job) due finite resources and user competition for those resources. One way to deal with this problem is to schedule your jobs over time (e.g. by using cronjobs) though this isn't always practical for more complex workflows. Using authentication keys (in this case Java Web Tokens or JWTs) you can setup a connection from your CUmulus instance to CURC HPC and schedule jobs remotely to set up more complex workflow specific pipelines. 
 
 We have documented the process for an **Ubuntu 20.04 instance on CUmulus connecting to the CURC Blanca cluster**. Below is an outline with links to specific sections:
-1. [Create your CUmulus instance](#part-1-create-your-cumulus-instance)
+1. Create your CUmulus instance
 2. Install SLURM on CUmlus Instance
 3. Configure SLURM in CUmulus
 4. Generate Java Web Token (JWT) in CURC HPC
