@@ -130,6 +130,7 @@ Our CUmulus instance is now configured to submit jobs to CURC HPC resources. Whe
 
 You have now successfully connected your CUmulus instance to CURC HPC resources! From this point you have a number of ways to integrate this connection into your workflow:
 * Pass raw data to CURC HPC resources for post-processing once it becomes available.
-* example 2
-* example 3
 
+
+		
+> This work has been funded in part by the National Science Foundation under grant OAC-1925766
