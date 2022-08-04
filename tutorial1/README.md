@@ -116,8 +116,8 @@ A flavor defines the compute, memory, and storage capacity of our instance.
 <img src="images/instance_networks.png" width="70%" />
 </p>
 
-* Select a project network, which determines routability of either a public/internet or campus/internal floating IP.
-  * _For this tutorial we’ll choose an external network (the default)_
+* Select a project network, which determines routability of either a public/internet (26140) or campus/internal (1840) floating IP.
+  * _For this tutorial we’ll choose an external network, 26140_
 * click `Next` when done to go to the ___Ports___ screen.
   * Ports provide extra communication channels to your instances. 
   * You can select ports instead of networks or a mix of both.
