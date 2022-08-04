@@ -50,23 +50,21 @@ Navigate to https://cumulus.rc.colorado.edu and authenticate using your insituti
 </p>
 
 ---
-
-#### _Navigate Horizon: Instances_
-
-* Navigate to: `Project->Compute->Instances`
-
-* Instances are virtual machines that run inside the cloud, more simply: an instance is just a digital version of a physical computer.
-  * Instances can perform almost all of the same functions as a computer, including running applications and operating systems.
-
-* You are now ready for instance creation! ...
-
-
----
 ### Part 2: Instance Creation
 ---
 
-* From here, let’s create a simple instance
-  * From the Instances page click `Launch Instance` to begin creating your virtual machine.
+#### _Instance creation: Initiate a new instance_
+
+_Instances are virtual machines that run inside the cloud, more simply: an instance is just a digital version of a physical computer._
+  * _Instances can perform almost all of the same functions as a computer, including running applications and operating systems._
+
+Do the following: 
+1. Select a project
+2. Navigate to “Compute”
+3. Select “Instances”
+4. click "Launch Instance" to begin creating your instance (virtual machine).
+
+<img src="images/navigate_to_instances.png" width="35%" />
 
 #### _Instance creation: Details_
  
