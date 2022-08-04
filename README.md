@@ -3,7 +3,7 @@
 
 ## What is CUmulus?
 
-[Cumulus](https://curc.readthedocs.io/en/latest/hybrid-cloud/cumulus.html) is [CU Research Computing](https://www.colorado.edu/rc)'s free-to-use on-premise cloud service, which supports cases not well-suited for HPC such as web servers, databases, workflow managers, and other long-running services.
+[Cumulus](https://curc.readthedocs.io/en/latest/hybrid-cloud/cumulus.html) is [CU Research Computing](https://www.colorado.edu/rc)'s free-to-use on-premise cloud service, which supports cases not well-suited for HPC such as web servers, databases, workflow managers, and other long-running services. CUmulus is funded in part by the National Science Foundation under grant OAC-1925766.
 
 Cumulus provides users with persistent or ongoing availability by allocating them a logically isolated section of the cloud
 
@@ -14,6 +14,33 @@ You get your own virtual “world” for experimentation - an environment that c
 * Interface w/ other CURC services: Blanca, Alpine, PetaLibrary
 
 You can request specific resources (CPU, storage, memory) and can set up persistent storage.
+
+#### Cumulus specifications
+
+* 244 total CPU cores
+* 4GB RAM per CPU core
+* 101.3TB of object-oriented storage
+
+## What would I do on CUmulus? 
+
+#### Appropriate use cases:
+- Workflow management software that monitors/schedules jobs on Summit, Alpine, or Blanca
+- Running a research database/website application that queries data stored on CURC PetaLibrary 
+- Web-based research “Hubs” (JupyterHub, Rstudio-server, Shiny Apps)
+- License servers for software used in CURC ecosystem
+
+#### Inappropriate use cases: 
+- Running workflows that can more efficiently be run on Summit, Alpine or Blanca
+- Personal websites or websites unrelated to research
+- Serverless applications
+
+## Who can use CUmulus? 
+
+CUmulus is a free-to-use cloud system where:
+- 80% of cycles: CU Boulder faculty, staff, students, and affiliates
+- 20% of cycles: RMACC affiliates (CSU, Wyoming, UC system campuses, [and many more](https://rmacc.org/partners)) 
+
+> To ensure optimal usage, unused cycles are preemptively available to the Open Science Grid ([OSG](https://opensciencegrid.org/))
 
 ## How do I access CUmulus? 
 
